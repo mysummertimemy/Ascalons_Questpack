@@ -823,7 +823,9 @@ END //APPEND
 
 CHAIN
 IF ~~ THEN ACQ10116 draglon_gone
-@416 DO ~SetGlobal("ACQWOSTOKTEMPLE","GLOBAL",1) EraseJournalEntry(@3000033) AddJournalEntry(@3000035,QUEST) TakePartyItem("ACQBOOK1")TakePartyItem("ACQLET03")~
+@416 DO ~SetGlobal("ACQWOSTOKTEMPLE","GLOBAL",1)
+SetGlobal("ACQWOSTOK","GLOBAL",2)
+EraseJournalEntry(@3000033) AddJournalEntry(@3000035,QUEST) TakePartyItem("ACQBOOK1")TakePartyItem("ACQLET03")~
 ==ACQ10114 @234 DO ~EscapeAreaDestroy(10)~
 ==ACQ10115 @235 DO ~EscapeAreaDestroy(10)~
 ==ACQ10113 @236 DO ~EscapeAreaDestroy(10)~ 
